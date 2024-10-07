@@ -1,0 +1,263 @@
+.popup-section {
+    background-color: rgba(255, 240, 240, 0.363);
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.popup-container {
+    background-color: rgb(212, 207, 207);
+    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.5);
+    height: 50vh;
+    width: 50vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-container h5 {
+    font-size: 50px;
+    margin-block-end: 1em;
+}
+
+.popup-container input {
+    font-size: 24px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    width: 30%;
+    transition: all 225ms ease-in-out;
+    margin-bottom: 20px;
+}
+
+.popup-container input:hover {
+    width: 40%;
+}
+
+.popup-container button {
+margin-top: 30px;
+width: 10%;
+height: 30px;
+border: 0;
+border-radius: 10px;
+box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
+transition: all 225ms ease-in-out;
+}
+
+.popup-container button:hover {
+width: 15%;
+box-shadow: 0px 0px 15px 3px rgba(87, 85, 85, 0.5);
+}
+
+.d-none {
+display: none;
+}
+
+.comment-popup-container {
+    background-color: rgb(212, 207, 207);
+    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.5);
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.comment-popup-container img{
+width: 60%;
+height: 100%;
+object-fit: cover;
+}
+
+.comments-container-popup {
+background-color: black;
+width: 40%;
+}
+
+.show-comments {
+width: 90%;
+}
+
+.comment-text-popup {
+color: white;
+margin-bottom: 20px;
+word-break: break-all;
+width: 100%;
+}
+
+.border {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.show-comments {
+    border-bottom: 1px solid gray;
+    height: 65%;
+    width: 90%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.margin {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.closePopup {
+position: absolute;
+height: 40px;
+width: 40px;
+top: 20px;
+right: 20px;
+cursor: pointer;
+}
+
+@media (max-width: 1640px) {
+    .popup-container input {
+        width: 50%;
+
+    }
+    
+    .popup-container input:hover {
+        width: 60%;
+    }
+
+    .popup-container button {
+        width: 20%;
+        }
+        
+        .popup-container button:hover {
+        width: 25%;
+        }
+}
+
+@media (max-width: 1100px) {
+    .popup-container input {
+        width: 70%;
+
+    }
+    
+    .popup-container input:hover {
+        width: 80%;
+    }
+
+    .popup-container button {
+        width: 40%;
+        }
+        
+        .popup-container button:hover {
+        width: 50%;
+        }
+}
+
+
+@media (max-width: 760px) {
+    .comment-popup-container {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    .comment-popup-container img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .show-comments {
+        border-bottom: 1px solid gray;
+        height: 100px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        width: 90%;
+        word-break: break-all;
+    }
+
+
+    .comments-container-popup {
+        background-color: black;
+        width: 100%;
+        height: 40%;
+        
+    }
+
+    .popup-container {
+        width: 80vw;
+    }
+
+    .comment-popup-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .comment-popup-container img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .closePopup {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        top: 10px;
+        right: 10px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .popup-container {
+        width: 100vw;
+    }
+
+    .popup-container input {
+        width: 90%;
+
+    }
+    
+    .popup-container input:hover {
+        width: 950%;
+    }
+
+    .popup-container button {
+        width: 60%;
+        }
+        
+        .popup-container button:hover {
+        width: 65%;
+        }
+
+        .closePopup {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            top: 5px;
+            right: 5px;
+        }
+
+        .comment-popup-container {
+            flex-direction: column; 
+            width: 80%; 
+            height: auto;
+            padding-bottom: 20px;
+        }
+
+        .popup-container {
+            width: 100vw;
+            height: auto;
+            padding-bottom: 10px;
+        }
+
+}

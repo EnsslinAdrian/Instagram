@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    display: flex;
+    overflow-x: hidden;
+    font-family: 'Open Sans';
+}
+
+.menu-section {
+    border-right: 1px solid rgb(90, 89, 89);
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    position: fixed;
+}
+
+.menu-links {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: all 250ms ease-in;
+}
+
+.menu-links:hover {
+    background-color: rgb(56, 55, 55);
+}
+
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'Aguafina Script';
+    letter-spacing: 10px;
+}
+
+.menu-links img {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.profil-img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-options-container {
+    margin-top: 280px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+    
+    }
+
+    .color-white {
+        color: white;
+    }
+
+    .color-gray {
+        color: rgb(155, 155, 155)
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+    }
+
+    .distance-p {
+        margin-block-start: 0;
+    }
+
+    .distance-p-bottom {
+        margin-block-end: 0.5em;
+    }
+
+    .cursor-pointer {
+    cursor: pointer;
+    }
+
+@media (max-width: 1285px) {
+    .menu-section {
+        border-right: 1px solid rgb(90, 89, 89);
+        height: 100vh;
+        width: 80px;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        color: white;
+        display: none;
+    }
+
+    .menu-links img {
+        height: 40px;
+        width: 40px;
+        margin-right: 0;
+    }
+
+    h1 {
+       display: none;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        }
+
+        .menu-options-container {
+            margin-top: 240px;
+        }
+
+}
+
+@media (max-width: 1160px) {
+    body {
+        margin: 0;
+        display: block;
+    }
+}

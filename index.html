@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="posten.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="shortcut icon" href="./img/icon-1562136_640.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Instagram</title>
+
+</head>
+
+<body onload="initRender()">
+
+    <section class="menu-section">
+        <h1>Instagram</h1>
+        <div class="menu-links">
+            <img src="./img/icons8-startseite-50.png" alt="Startseite">
+            <a href="#"><b>Startseite</b></a>
+        </div>
+        <div class="menu-links">
+            <img src="./img/icons8-lupe-50.png" alt="Suche">
+            <a href="#">Suche</a>
+        </div>
+        <div class="menu-links">
+            <img src="./img/icons8-entdecken-50 (2).png" alt="Endecken">
+            <a href="#">Endecken</a>
+        </div>
+        <div class="menu-links">
+            <img src="./img/icons8-instagram-reel-50 (1).png" alt="Reels">
+            <a href="#">Reels</a>
+        </div>
+        <div class="menu-links">
+            <img src="./img/icons8-nachricht-50 (2).png" alt="Narichten">
+            <a href="#">Narichten</a>
+        </div>
+        <div class="menu-links">
+            <img src="./img/icons8-herz-50 (1).png" alt="Benarichtigungen">
+            <a href="#">Benarichtigungen</a>
+        </div>
+        <div class="menu-links">
+            <img src="./img/icons8-erstellen-64.png" alt="Erstellen">
+            <a href="#">Erstellen</a>
+        </div>
+        <div class="menu-links">
+            <img class="profil-img" src="./img/profile.png" alt="Profil">
+            <a href="#">Profil</a>
+        </div>
+        <div class="menu-options-container">
+            <div class="menu-links">
+                <img src="./img/icons8-threads-48 (1).png" alt="Threads">
+                <a href="#">Threads</a>
+            </div>
+            <div class="menu-links">
+                <img src="./img/icons8-menü-50.png" alt="Mehr">
+                <a href="#">Mehr</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex-column">
+        <section class="story-section">
+            <div class="margin-left">
+                <div class="for-you-headline">
+                    <p><b>Für dich</b></p>
+                    <p class="color">Gefolgt</p>
+                </div>
+
+                <div class="for-you-pictures" id="forYou">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="posts-section" id="posts">
+
+        </section>
+    </div>
+
+    <section class="profiles">
+
+        <div class="profiles-container">
+
+            <div class="profiles-container-profil">
+
+                <div class="profiles-picture">
+                    <img src="./img/profile.png">
+                    <div class="profiles-names">
+                        <p><b id="questUserName"></b></p>
+                        <p class="color" id="questName"></p>
+                    </div>
+                </div>
+                <div class="profile-change">
+                    <a href="#">Wechseln</a>
+                </div>
+            </div>
+
+            <div class="profiles-headline">
+                <p class="color">Vorschläge für dich</p>
+                <a href="#"><b>Alle ansehen</b></a>
+            </div>
+
+            <div id="suggestions">
+            </div>
+
+            <div class="footer-section">
+                <a href="#">Info .</a>
+                <a href="#">Hilfe .</a>
+                <a href="#">Presse .</a>
+                <a href="#">API .</a>
+                <a href="#">Jobs .</a>
+                <a href="#">Datenrichtlinie .</a>
+                <a href="#">Nutzungsbedingungen und Impressum .</a>
+                <a href="#">UrhDaG/MStV .</a>
+                <a href="#">Standorte .</a>
+                <a href="#">Sprache .</a>
+                <a href="#">Meta Verified</a><br><br>
+                <p>@ 2024 INSTAGRAM FROM META</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="popup-section" id="popupSection">
+        <div class="popup-container" id="popup">
+
+        </div>
+    </section>
+
+    <section class="popup-section d-none" id="commentPopupSection">
+        <img onclick="closePopup()" class="closePopup" src="./img\x-icon.png">
+        <div class="comment-popup-container" id="commentPopup">
+
+           
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

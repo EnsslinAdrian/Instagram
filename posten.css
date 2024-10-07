@@ -1,0 +1,123 @@
+.posts-section {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .post-container {
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    }
+
+    .post-header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    }
+
+    .post-header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    }
+
+    .post-picture {
+    height: 400px;
+    }
+
+    .post-picture img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+        }
+
+    .post-options-img {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .post-info-text {
+    height: auto;
+    }
+
+    .wihtd {
+    width: 100%;
+    word-break: break-all;
+    }
+
+    .post-comment {
+    height: auto;
+    }
+
+    .options-img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .post-options-img img {
+    height: 35px;
+    width: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+
+    textarea {
+    border: 0;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 30px;
+    max-height: 50px;
+    width: 80%;
+    resize: none;
+    }
+    
+    .comment-container {
+    display: flex;
+    align-items: center;
+    }
+
+    .comment-container button{
+    border: 0;
+    color: #008CE7;
+    background-color: black;
+    }
+
+    @media (max-width: 1160px) {   
+       .post-container {
+            margin-left: 0;
+            }
+    }
+
+    @media (max-width: 760px) {
+        .menu-section {
+           display: none ;
+        }
+    
+        .flex-column {
+            margin-left: 0;
+            }
+    
+            .post-container {
+                width: 80%;
+                }
+    
+    }
+    
+    @media (max-width: 500px) {
+        .post-container {
+            width: 100%;
+            }
+    }
